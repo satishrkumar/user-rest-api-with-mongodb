@@ -20,7 +20,7 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <start-class>in.bushansirgur.restapi.SpringBootMongodbRestApiApplication</start-class>
+    <start-class>com.ssaa.SpringBootMongodbRestApiApplication</start-class>
   </properties>
 
   <dependencies>
