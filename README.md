@@ -18,10 +18,7 @@ build process by the plugins specified in `pom.xml`.
 By default, Spring Boot configures the Jersey servlet container as a [servlet](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-jersey).
 
 ```
-
 You also need the following dependency to view `swagger-ui.html`, 
-
-```xml
 
 ```
 
