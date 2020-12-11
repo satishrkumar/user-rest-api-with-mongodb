@@ -3,7 +3,7 @@ package com.ssaa.controller;
 import java.util.List;
 
 import com.ssaa.model.UserModel;
-import com.ssaa.service.ServiceFacade;
+import com.ssaa.service.UserServiceFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,31 +20,31 @@ public class UserController {
 
 
     @Autowired
-    ServiceFacade serviceFacade;
+    UserServiceFacade userServiceFacade;
 
     @PostMapping("/create")
     public UserModel create(@RequestBody UserModel userModel) {
-        return serviceFacade.createUser(userModel);
+        return userServiceFacade.createUser(userModel);
     }
 
     @GetMapping("/read")
     public List<UserModel> read() {
-        return serviceFacade.readAllUser();
+        return userServiceFacade.readAllUser();
     }
 
     @GetMapping("/read/{id}")
     public UserModel read(@PathVariable Long id) {
-        return serviceFacade.findUserById(id);
+        return userServiceFacade.findUserById(id);
     }
 
     @PutMapping("/update")
     public UserModel update(@RequestBody UserModel userModel) {
-        return serviceFacade.updateExistingUser(userModel);
+        return userServiceFacade.updateExistingUser(userModel);
     }
 
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable Long id) {
-        return serviceFacade.deleteUser(id);
+        return userServiceFacade.deleteUser(id);
     }
 
 }

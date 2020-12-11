@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.ssaa.model.UserModel;
 
-public interface ServiceFacade {
+public interface UserServiceFacade {
     UserModel createUser(UserModel userModel);
 
     List<UserModel> readAllUser();
