@@ -17,15 +17,6 @@ build process by the plugins specified in `pom.xml`.
 
 By default, Spring Boot configures the Jersey servlet container as a [servlet](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-jersey).
 
-> By default Jersey will be set up as a Servlet in a @Bean of type ServletRegistrationBean named jerseyServletRegistration. You can disable or override that bean by creating one of your own with the same name. You can also use a Filter instead of a Servlet by setting spring.jersey.type=filter (in which case the @Bean to replace or override is jerseyFilterRegistration).
-
-It needs to be changed into a filter in order to pickup the Swagger static 
-resources. It can be achieved by modifying the `application.yml`file:
-
-```yaml
-spring:
-  jersey:
-    type: filter
 ```
 
 You also need the following dependency to view `swagger-ui.html`, 
