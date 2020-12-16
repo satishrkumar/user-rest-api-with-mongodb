@@ -34,6 +34,11 @@ To run the application fromm command line,
 
 ```
 java -jar target/com.ssaa.mongo.demo-1.0-SNAPSHOT.jar
+
+Open JDK
+
+java -Djdk.tls.client.protocols=TLSv1.2 -jar target/com.ssaa.mongo.demo-1.0-SNAPSHOT.jar
+
 ```
 
 ### Access Swagger Endpoints
