@@ -35,7 +35,7 @@ To run the application fromm command line,
 ```
 java -jar target/com.ssaa.mongo.demo-1.0-SNAPSHOT.jar
 
-Open JDK
+Open JDK (openjdk version "12.0.1" 2019-04-16)
 
 java -Djdk.tls.client.protocols=TLSv1.2 -jar target/com.ssaa.mongo.demo-1.0-SNAPSHOT.jar
 
